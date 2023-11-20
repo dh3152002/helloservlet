@@ -88,7 +88,7 @@
             <div class="sidebar-nav navbar-collapse slimscrollsidebar">
                 <ul class="nav" id="side-menu">
                    <li style="padding: 10px 0 0;">
-                        <a href="/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                        <a href="/helloservlet/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
                                 aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li>
@@ -152,12 +152,6 @@
                                     <div class="col-md-12">
                                         <input type="password" class="form-control form-control-line" name="password">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-12">Phone No</label>
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="123 456 7890"
-                                            class="form-control form-control-line"> </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-12">Select Role</label>

@@ -61,24 +61,23 @@
 					</span>
 					</a>
 				</div>
-				<ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+				<ul class="nav navbar-top-links navbar-right pull-right">
 					<li>
-						<form role="search" class="app-search hidden-xs">
-							<input type="text" placeholder="Search..." class="form-control">
-							<a href=""> <i class="fa fa-search"></i>
+						<div class="dropdown">
+							<a class="profile-pic dropdown-toggle" data-toggle="dropdown"
+								href="#"> <img src="plugins/images/users/varun.jpg"
+								alt="user-img" width="36" class="img-circle" /> <b
+								class="hidden-xs">Cybersoft</b>
 							</a>
-						</form>
+							<ul class="dropdown-menu">
+								<li><a href="/helloservlet/profile">Thông tin cá nhân</a></li>
+								<li><a href="#">Thống kê công việc</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Đăng xuất</a></li>
+							</ul>
+						</div>
 					</li>
 				</ul>
-				<ul class="dropdown-menu">
-                               	<li><a href="/helloservlet/profile">Thông tin cá nhân</a></li>
-                                <li><a href="#">Thống kê công việc</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Đăng xuất</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
             </div>
             <!-- /.navbar-header -->
             <!-- /.navbar-top-links -->
@@ -89,7 +88,7 @@
             <div class="sidebar-nav navbar-collapse slimscrollsidebar">
                 <ul class="nav" id="side-menu">
                     <li style="padding: 10px 0 0;">
-                        <a href="/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                        <a href="/helloservlet/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
                                 aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li>

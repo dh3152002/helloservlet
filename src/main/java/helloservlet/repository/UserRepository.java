@@ -118,18 +118,17 @@ public class UserRepository {
 		return userEntity;
 	}
 	
-	public int update(int id,String email,String password,String fullname,String avatar,int role_id) {
+	public int update(int id,String email,String fullname,String avatar,int role_id) {
 		int count=0;
-		String query="UPDATE users SET email = ?,password=?, fullname = ?, avatar=?, role_id=? WHERE id = ?";
+		String query="UPDATE users SET email = ?, fullname = ?, avatar=?, role_id=? WHERE id = ?";
 		try {
 			Connection connection=MysqlConfig.getConnection();
 			PreparedStatement preparedStatement=connection.prepareStatement(query);
 			preparedStatement.setString(1, email);
-			preparedStatement.setString(2, password);
-			preparedStatement.setString(3, fullname);
-			preparedStatement.setString(4, avatar);
-			preparedStatement.setInt(5, role_id);
-			preparedStatement.setInt(6, id);
+			preparedStatement.setString(2, fullname);
+			preparedStatement.setString(3, avatar);
+			preparedStatement.setInt(4, role_id);
+			preparedStatement.setInt(5, id);
 			count=preparedStatement.executeUpdate();
 		} catch (Exception e) {
 			// TODO: handle exception

@@ -21,8 +21,8 @@ public class UserService {
 		return userRepository.findById(id);
 	}
 	
-	public boolean update(int id,String email,String password,String fullname,String avatar,int role_id) {
-		int count=userRepository.update(id, email,password, fullname, avatar, role_id);
+	public boolean update(int id,String email,String fullname,String avatar,int role_id) {
+		int count=userRepository.update(id, email, fullname, avatar, role_id);
 		return count>0;
 	}
 	

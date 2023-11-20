@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletResponse;
 
 import helloservlet.service.LoginService;
 
-@WebServlet(name = "loginController", urlPatterns = {"/login"})
+@WebServlet(name = "loginController", urlPatterns = { "/login" })
 public class LoginController extends HttpServlet {
 	private LoginService loginService = new LoginService();
-	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		req.getRequestDispatcher("login.jsp").forward(req, resp);
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -27,12 +27,14 @@ public class LoginController extends HttpServlet {
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
 		String remember = req.getParameter("remember");
-		
-		boolean isSuccess=loginService.checkLogin(email, password,remember,resp);
-		
-		System.out.println("Kiem tra login "+isSuccess);
-		
-		String contextPath=req.getContextPath();
-		resp.sendRedirect(contextPath);
+
+		boolean isSuccess = loginService.checkLogin(email, password, remember, resp);
+		String contextPath = req.getContextPath();
+
+		if (isSuccess) {
+			resp.sendRedirect(contextPath);
+		}else {
+			resp.sendRedirect(contextPath+"/login");
+		}
 	}
 }

@@ -90,7 +90,7 @@
             <div class="sidebar-nav navbar-collapse slimscrollsidebar">
                 <ul class="nav" id="side-menu">
 					<li style="padding: 10px 0 0;">
-                        <a href="/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
+                        <a href="/helloservlet/" class="waves-effect"><i class="fa fa-clock-o fa-fw"
                                 aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li>
@@ -126,7 +126,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Thêm mới công việc</h4>
+                        <h4 class="page-title">Cập nhật công việc</h4>
                     </div>
                 </div>
                 <!-- /.row -->

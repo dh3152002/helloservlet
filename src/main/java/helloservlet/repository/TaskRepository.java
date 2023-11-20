@@ -116,6 +116,7 @@ public class TaskRepository {
 				taskEntity.setEndDate(resultSet.getDate("end_date"));
 				taskEntity.setUserId(resultSet.getInt("user_id"));
 				taskEntity.setJobName(resultSet.getString("job_name"));
+				taskEntity.setStatusId(resultSet.getInt("status_id"));
 			}
 		} catch (Exception e) {
 			// TODO: handle exception

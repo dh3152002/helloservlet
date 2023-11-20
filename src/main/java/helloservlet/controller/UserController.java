@@ -104,7 +104,7 @@ public class UserController extends HttpServlet{
 		String fullname=new String(req.getParameter("fullname").getBytes("ISO-8859-1"), "UTF-8");
 		String avatar=req.getParameter("avatar");
 		int role_id=Integer.parseInt(req.getParameter("role_id"));
-		boolean isSuccess=userService.update(id, email, password, fullname, avatar, role_id);
+		boolean isSuccess=userService.update(id, email, fullname, avatar, role_id);
 		if(isSuccess) {
 			System.out.println("Cap nhat user thanh cong");
 		}else {
